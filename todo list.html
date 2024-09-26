@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    
+     
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h1>Task List</h1>
+        
+        <form action="" id="form">
+            <!-- user_input -->
+            <div class="user_input_div" id="user_input_div">
+                <input type="text"  class="user_input" id="input" placeholder="Add task" required>
+                <input type="submit" class="add-task" value="Add Task" onclick="addtask(event)">
+            </div>
+
+            <!-- tasks --><br>
+             <h2 style="text-align: start;padding-left: 15px;">Tasks</h2>
+            
+             <div class="task-container">
+
+                <!-- <div class="task_list_container">
+                    <input type="text" class="task_text" value="work" readonly>
+                    <button class="edit" onclick="edit(event)">Edit</button>
+                    <button class="del" onclick="del(event)">Delete</button>
+                </div> -->
+
+            </div>
+
+       
+        </form>
+    </div>
+</center>
+<script src="js.js"></script>
+</body>
+</html>

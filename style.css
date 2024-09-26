@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: hsla(191, 75%, 60%, 1);
+
+background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+
+    /* background: linear-gradient(90deg, hsla(280, 84%, 41%, 1) 0%, hsla(218, 97%, 56%, 1) 100%); */
+   
+
+      
+
+
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 30px;
+    margin-top: 100px;
+    /* border: solid red 1px; */
+    max-width: 700px;
+    background-color: rgb(90, 255, 186);
+}
+
+.user_input_div{
+    /* border: solid red 1px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.user_input{
+    width: 80%;
+    height: 50px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: none;
+    /* padding: 10px; */
+    /* border: none; */
+}
+.add-task{
+    width: 100px;
+height: 50px;
+font-size: larger;
+border-radius: 15px;
+border: none;
+cursor: pointer;
+background-color: rgb(8, 180, 31);
+color: white;
+}
+
+.task_list_container{
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+width: 600px;
+/* height: fit-content; */
+padding: 7px;
+display: flex;
+justify-content:center;
+text-align: center;
+margin: 15px 0;
+
+}
+.task_text{
+    width: 70%;
+    /* height: 40px; */
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+    font-size: 1.5rem;
+}
+.task_text:focus{
+    /* border: white 1px solid; */
+    outline: none;
+}
+.edit,.del{
+    width: 80px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+.edit{
+    background-color: rgb(8, 180, 31);
+    color: white;
+
+}
+
+.del{
+    background-color: rgb(252, 19, 19);
+    color: white;
+
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .user_input_div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .user_input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .task_list_container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+    }
+
+    .task_text {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .edit, .del {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+}
